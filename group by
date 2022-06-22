@@ -8,3 +8,11 @@ FROM
     ) SQ1
     
     name에있는 null, 중복제거
+    
+
+SELECT animal_type, count(animal_type) as count
+from animal_ins
+group by animal_type
+order by animal_type;
+
+컬럼별로 정리가능
