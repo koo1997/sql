@@ -1,0 +1,9 @@
+SELECT animal_id , name ,
+case when instr(SEX_UPON_INTAKE ,'Intact')>0 then 'X'
+else 'O'                            ==    ==
+                                   $intact%뜻
+end 중성화
+from animal_ins 
+order by animal_id;
+
+
