@@ -1,0 +1,18 @@
+SELECT ANIMAL_ID,NAME
+from ANIMAL_INS
+where (upper(name) like '%el%'
+or upper(name) like '%EL%' )
+and ANIMAL_TYPE	= 'Dog'
+order by name;
+
+LIKE는 대소문자를 구분하여 검색하기 때문에, 대소문자 구분 없이 검색하기 위해서는 UPPER, LOWER 함수를 사용하여 컬럼의 값을 치환 후 검색해야 한다.
+
+ 
+
+WHERE LOWER(job) LIKE 'sales%'==소
+
+WHERE LOWER(job) LIKE LOWER('Sales%')
+
+WHERE UPPER(job) LIKE 'SALES%'==대문자
+
+WHERE UPPER(job) LIKE UPPER('Sales%')
