@@ -1,0 +1,22 @@
+SELECT a.empno            일반 안시조인               -
+     , a.ename            두테이블에 값이있어야 조회   -     
+     , a.deptno                                      -   
+     , b.dname                                       -
+  FROM emp a                                         -
+                                                    -
+ INNER JOIN dept b
+    ON a.deptno = b.deptno
+ WHERE a.job = 'MANAGER'
+ 
+ 
+ SELECT a.empno                       일반 오라클조인
+  
+     , a.ename
+     , a.deptno
+     , b.dname
+  FROM emp a
+     , dept b
+ WHERE a.job = 'MANAGER'
+   AND a.deptno = b.deptno
+   
+   https://gent.tistory.com/469
